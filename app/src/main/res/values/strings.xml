@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">U-Stalls</string>
+    <string name="terms_title">Terms and Conditions</string>
+    <string name="terms_description">Welcome to the U-Stalls App. By using this app, you agree to the following terms and conditions. Please read them carefully.</string>
+    <string name="account_registration">Account Registration</string>
+    <string name="account_registration_details">
+        Eligibility: Only authorized stall operators from the University of Pangasinan can create and manage a stall account.\n
+        Account Credentials: Each stall is assigned a predetermined account and password. You are responsible for keeping this information secure.\n
+        Account Management: Stall operators can update their menu, inventory, and prices. All information must be accurate and up-to-date.
+    </string>
+    <string name="ordering_process">Ordering Process</string>
+    <string name="ordering_process_details">
+        Order Confirmation: Orders must be confirmed before submission and cannot be canceled or modified once submitted.\n
+        Right to Cancel: U-Stalls may cancel orders due to unavailability or unforeseen circumstances. Affected users will be notified.
+    </string>
+    <string name="payment">Payment</string>
+    <string name="payment_methods">
+        Payment Methods: Payments are processed through GCash and Maya. Stall operators must keep their payment details accurate.
+        Pricing: Stall operators set prices, which may change without prior notice.
+        Refunds: Payments are non-refundable, except for incorrect or unavailable items.</string>
+    <string name="Stall_Operations"> Stall Operations</string>
+    <string name="inventory_menu_management">
+        Inventory and Management: Stall operators are responsible for maintaining accurate inventory levels and menu updates.
+        Compliance: Operators must adhere to all university policies on food safety and hygiene.</string>
+    <string name="General_Conditons">General Conditions</string>
+    <string name="app_usage">
+        App Usage: U-Stalls may modify or discontinue the app at any time without notice.
+        Termination: Accounts violating these terms may be suspended or terminated.
+        Updates: Terms may be updated; continued use of the app signifies acceptance of changes.</string>
+    <string name="terms_agreement">By using the U-Stalls App, you agree to these terms and conditions. Thank you for using U-Stalls!</string>
+    <string name="back_button_description">Back Button</string>
+    <string name="otp_verification_title">OTP Verification</string>
+    <string name="otp_illustration_description">OTP Illustration</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_description">An 4 digit code has been sent</string>
+    <string name="otp_countdown">You should receive the OTP in 30 seconds</string>
+    <string name="verify">Verify</string>
+
+    <string name="accept_terms_button">ACCEPT TERMS AND CONDITIONS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

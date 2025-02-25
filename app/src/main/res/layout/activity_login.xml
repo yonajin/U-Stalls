@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp"
+    android:layout_marginTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="100dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="190dp"
+            android:src="@drawable/loginbg"
+            android:contentDescription="U-Eat Logo" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Hi, U-Eat Partner!"
+            android:textSize="33sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to your account"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Stall ID Input -->
+        <EditText
+            android:id="@+id/stall_id"
+            android:layout_width="277dp"
+            android:layout_height="50dp"
+            android:hint="Enter your Stall ID"
+            android:background="@drawable/input_field"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"/>
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="277dp"
+            android:layout_height="50dp"
+            android:hint="Enter your password"
+            android:fontFamily="@font/poppins_regular"
+            android:textColorHint="@color/black"
+            android:background="@drawable/input_field"
+            android:padding="10dp"
+            android:inputType="textPassword"/>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:fontFamily="@font/poppins_bold"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Remember Me & Forgot Password -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Remember me"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginLeft="103dp"
+                android:text="forgot password?"
+                android:textColor="@color/yellow"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

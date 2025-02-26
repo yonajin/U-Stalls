@@ -110,20 +110,57 @@
 
 
     <!-- icon-->
-    <LinearLayout
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:orientation="horizontal"
-        android:paddingBottom="10dp">
+        android:fillViewport="true">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="50dp">
 
-        <ImageView
-            android:layout_width="380dp"
-            android:layout_height="40dp"
-            android:src="@drawable/TabQueue" />
+            <ImageButton
+                android:id="@+id/button"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/today"
+                android:text=""
+                app:srcCompat="@drawable/today" />
 
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/yesterday"
+                android:text=""
+                app:srcCompat="@drawable/yesterday"/>
 
-    </LinearLayout>
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/last7days"
+                android:text=""
+                app:srcCompat="@drawable/last7days"/>
+
+            <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/lastmonth"
+                app:srcCompat="@drawable/lastmonth"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
 
     <!-- Order Status Section -->
@@ -138,20 +175,23 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="410dp"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:gravity="center">
+
 
                 <ImageView
                     android:id="@+id/ivRevenue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/Revenue"
                     android:layout_marginBottom="10dp"
-                    android:adjustViewBounds="true" />
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/review" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -162,27 +202,30 @@
                     android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
                 <ImageView
                     android:id="@+id/ivStars"
                     android:layout_width="380dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/Stars"
                     android:layout_marginBottom="10dp"
-                    android:adjustViewBounds="true" />
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/stars" />
+
                 <ImageView
                     android:id="@+id/ivRatings"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/Ratings"
                     android:layout_marginBottom="10dp"
-                    android:adjustViewBounds="true" />
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/Ratings" />
+
                 <ImageView
                     android:id="@+id/ivRatingsName"
                     android:layout_width="385dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/RatingsName"
                     android:layout_marginBottom="10dp"
-                    android:adjustViewBounds="true" />
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/RatingsName" />
             </LinearLayout>
 
         </ScrollView>
@@ -225,69 +268,93 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/white"
             android:gravity="center"
-            android:orientation="vertical">
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/overview" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
 
-            <TextView
-                android:id="@+id/overview_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Overview"
-                android:textColor="@color/yellow"
-                android:textSize="14sp" />
-        </LinearLayout>
+                <ImageButton
+                    android:id="@+id/order_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    app:tint="#00FF8B00"
+                    android:src="@drawable/neworder"
+                    app:srcCompat="@drawable/neworder"
+                    android:background="@drawable/neworder"
+                    android:text="" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/queue" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/queue_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Queue"
-                android:textColor="@color/yellow"
-                android:textSize="14sp" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/menu" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
 
-            <TextView
-                android:id="@+id/menu_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Menu"
-                android:textColor="@color/yellow"
-                android:textSize="14sp" />
+                <ImageButton
+                    android:id="@+id/overview_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    app:tint="#00FF8B00"
+                    android:src="@drawable/newoverview"
+                    android:background="@drawable/newoverview"
+                    android:text=""
+                    app:srcCompat="@drawable/newoverview"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/queue_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:tint="#00FF8B00"
+                    android:background="@drawable/newqueue"
+                    android:src="@drawable/newqueue"
+                    app:srcCompat="@drawable/newqueue"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/menu_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    app:tint="#00FF8B00"
+                    android:text=""
+                    android:background="@drawable/newmenu"
+                    app:srcCompat="@drawable/newmenu"
+                    android:src="@drawable/newmenu"/>
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:padding="10dp"
-    tools:context=".OrderActivity">
+    tools:context=".OrderFragment">
 
     <!-- Header Section -->
     <LinearLayout
@@ -143,11 +143,12 @@
 
             <TextView
                 android:id="@+id/ordertxt"
-                android:layout_width="52dp"
+                android:layout_width="55dp"
                 android:layout_height="20dp"
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
-                android:textSize="10sp"
+                android:textSize="15sp"
+                android:text="ORDER"
                 />
 
 
@@ -160,15 +161,15 @@
             android:orientation="vertical"
             android:gravity="center">
 
-             <ImageButton
-                 android:id="@+id/overview_btn"
-                 android:layout_width="60dp"
+            <ImageButton
+                android:id="@+id/overview_btn"
+                android:layout_width="60dp"
                 android:layout_height="50dp"
-                 app:tint="#00FF8B00"
-                 android:src="@drawable/newoverview"
-                 android:background="@drawable/newoverview"
-                 android:text=""
-                 app:srcCompat="@drawable/newoverview"/>
+                app:tint="#00FF8B00"
+                android:src="@drawable/newoverview"
+                android:background="@drawable/newoverview"
+                android:text=""
+                app:srcCompat="@drawable/newoverview"/>
 
 
         </LinearLayout>

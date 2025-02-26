@@ -26,10 +26,10 @@
         android:background="@drawable/exit"
         android:src="@drawable/exit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/exit"
-        tools:layout_editor_absoluteY="262dp" />
+        tools:layout_editor_absoluteY="263dp" />
 
     <!-- Bottom Navigation -->
 </androidx.constraintlayout.widget.ConstraintLayout>

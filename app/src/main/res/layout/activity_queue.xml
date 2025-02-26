@@ -327,13 +327,22 @@
 
             <ImageButton
                 android:id="@+id/order_btn"
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 app:tint="#00FF8B00"
-                android:src="@drawable/orderder"
-                app:srcCompat="@drawable/orderder"
-                android:background="@drawable/orderder"
+                app:srcCompat="@drawable/add_to_cart_svgrepo_com"
+                android:background="@drawable/add_to_cart_svgrepo_com"
                 android:text="" />
+
+            <TextView
+                android:id="@+id/ordertxt"
+                android:layout_width="55dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="ORDER"
+                />
 
 
         </LinearLayout>

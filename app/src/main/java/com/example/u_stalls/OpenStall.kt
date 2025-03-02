@@ -18,7 +18,7 @@ class OpenStall : AppCompatActivity() {
 
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.order -> startActivity(Intent(this, OrderFragment::class.java))
+                R.id.order -> startActivity(Intent(this,OpenStall::class.java))
                 R.id.overview -> startActivity(Intent(this, OverviewFragment::class.java))
                 R.id.queue -> startActivity(Intent(this, QueueFragment::class.java))
                 R.id.menu -> startActivity(Intent(this, MenuFragment::class.java))
@@ -29,8 +29,9 @@ class OpenStall : AppCompatActivity() {
         }
     }
 
-
+    @Deprecated("This method has been deprecated in favor of using the\n      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.\n      The OnBackPressedDispatcher controls how back button events are dispatched\n      to one or more {@link OnBackPressedCallback} objects.")
     override fun onBackPressed() {
+        super.onBackPressed()
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             toast.cancel()
             finishAffinity()

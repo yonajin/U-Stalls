@@ -75,16 +75,17 @@
                 android:id="@+id/printer"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
-                android:text=""
-                app:tint="#00FF8B00"
-                android:src="@drawable/print"
-                app:srcCompat="@drawable/print"
-                android:background="@drawable/print"
                 android:layout_marginEnd="34dp"
+                android:background="@drawable/print"
                 android:fontFamily="@font/poppins_bold"
-                android:textColor="@color/green"
                 android:gravity="right"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:src="@drawable/print"
+                android:text="Download"
+                android:textColor="@color/green"
+                app:srcCompat="@drawable/print"
+                app:tint="#00FF8B00"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </LinearLayout>
 
 
@@ -99,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:paddingBottom="50dp">
+                android:paddingBottom="5dp">
 
                 <ImageButton
                     android:id="@+id/button"
@@ -108,7 +109,8 @@
                     android:backgroundTint="#00FFFFFF"
                     android:src="@drawable/today"
                     android:text=""
-                    app:srcCompat="@drawable/today" />
+                    app:srcCompat="@drawable/today"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/button1"
@@ -117,7 +119,8 @@
                     android:backgroundTint="#00FFFFFF"
                     android:src="@drawable/yesterday"
                     android:text=""
-                    app:srcCompat="@drawable/yesterday"/>
+                    app:srcCompat="@drawable/yesterday"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/button2"
@@ -126,7 +129,8 @@
                     android:backgroundTint="#00FFFFFF"
                     android:src="@drawable/last7days"
                     android:text=""
-                    app:srcCompat="@drawable/last7days"/>
+                    app:srcCompat="@drawable/last7days"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/button3"
@@ -134,15 +138,14 @@
                     android:layout_height="50dp"
                     android:backgroundTint="#00FFFFFF"
                     android:src="@drawable/lastmonth"
+                    android:text=""
                     app:srcCompat="@drawable/lastmonth"
-                    android:text=""/>
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
 
         </HorizontalScrollView>
 
-
-    <!-- Order Status Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -151,99 +154,6 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="1dp">
-
-
         </LinearLayout>
 
-        <!-- Bottom Navigation -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/white"
-            android:gravity="center"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/order_btn"
-                    android:layout_width="60dp"
-                    android:layout_height="50dp"
-                    app:tint="#00FF8B00"
-                    android:src="@drawable/neworder"
-                    app:srcCompat="@drawable/neworder"
-                    android:background="@drawable/neworder"
-                    android:text="" />
-
-
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/overview_btn"
-                    android:layout_width="60dp"
-                    android:layout_height="50dp"
-                    app:tint="#00FF8B00"
-                    android:src="@drawable/newoverview"
-                    android:background="@drawable/newoverview"
-                    android:text=""
-                    app:srcCompat="@drawable/newoverview"/>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/queue_btn"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    app:tint="#00FF8B00"
-                    android:background="@drawable/newqueue"
-                    android:src="@drawable/newqueue"
-                    app:srcCompat="@drawable/newqueue"
-                    android:text=""
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/menu_btn"
-                    android:layout_width="60dp"
-                    android:layout_height="50dp"
-                    app:tint="#00FF8B00"
-                    android:text=""
-                    android:background="@drawable/newmenu"
-                    app:srcCompat="@drawable/newmenu"
-                    android:src="@drawable/newmenu"/>
-
-            </LinearLayout>
-        </LinearLayout>
 </LinearLayout>

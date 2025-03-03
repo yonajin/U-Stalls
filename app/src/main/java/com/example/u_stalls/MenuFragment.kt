@@ -108,6 +108,6 @@ class MenuFragment : Fragment() {
         etProductName.text.clear()
         etProductPrice.text.clear()
         etDescription.text.clear()
-        imageView.setImageResource(R.drawable.placeholder_image)
+        imageView.setImageResource(R.drawable.fgbg)
     }
 }

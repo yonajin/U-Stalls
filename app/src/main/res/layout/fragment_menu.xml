@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -127,10 +128,11 @@
             android:layout_marginBottom="16dp">
 
             <Button
+                android:id="@+id/btnDecreaseQuantity"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:text="-"
-                android:id="@+id/btnDecreaseQuantity"/>
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/tvQuantity"
@@ -141,10 +143,11 @@
                 android:textSize="18sp"/>
 
             <Button
+                android:id="@+id/btnIncreaseQuantity"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:text="+"
-                android:id="@+id/btnIncreaseQuantity"/>
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <!-- Product Name -->
@@ -152,31 +155,34 @@
             android:id="@+id/etProductName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Product Name"
-            android:padding="12dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/input_background"
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"/>
+            android:hint="Product Name"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textSize="16sp" />
 
         <!-- Product Price -->
         <EditText
             android:id="@+id/etProductPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/input_background"
             android:hint="Product Price"
             android:inputType="numberDecimal"
+            android:minHeight="48dp"
             android:padding="12dp"
-            android:background="@drawable/input_background"
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"/>
+            android:textSize="16sp" />
 
         <!-- Category Spinner -->
         <Spinner
             android:id="@+id/spinnerCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/input_background"
-            android:layout_marginBottom="8dp"/>
+            android:minHeight="48dp" />
 
         <!-- Description -->
         <EditText
@@ -196,7 +202,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Upload Item"
-            android:backgroundTint="@color/primary_color"
+            android:backgroundTint="@color/green"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:padding="12dp"/>

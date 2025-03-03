@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#BA615C5C"
     android:orientation="vertical"
     >
-
-    <!-- Order Status Section -->
 
     <ImageView
         android:id="@+id/dialog"
@@ -17,19 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="250dp" />
+        tools:layout_editor_absoluteY="250dp"
+        tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/exitBtn"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/exit"
-        android:src="@drawable/exit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.881"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/exit"
-        tools:layout_editor_absoluteY="263dp" />
 
-    <!-- Bottom Navigation -->
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,21 +21,22 @@
             android:id="@+id/tvStallNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  S1"
+            android:text="S1"
             android:fontFamily="@font/poppins_bold"
             android:textSize="15sp"
             android:layout_marginLeft="18dp"
             android:textStyle="bold"
+            android:textAlignment="center"
             android:textColor="@color/green"
             android:background="@drawable/circle_background"
-            android:padding="8dp" />
+            android:padding="9dp" />
 
         <ImageView
             android:id="@+id/tvLogo"
-            android:layout_width="67dp"
-            android:layout_height="57dp"
-            android:src="@drawable/loginbg"
-            android:layout_marginStart="18dp" />
+            android:layout_width="66dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/loginbg" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnOpen"
@@ -46,7 +47,7 @@
             android:background="@drawable/rounded_button"
             android:textColor="@color/yellow"
             android:padding="1dp"
-            android:textSize="12sp"
+            android:textSize="17sp"
             android:layout_marginStart="140dp"/>
     </LinearLayout>
 
@@ -121,7 +122,8 @@
         android:background="@color/white"
         app:menu="@menu/bottom_nav_menu"
         app:labelVisibilityMode="labeled"
-        app:itemIconTint="@color/nav_item_color"
-        app:itemTextColor="@color/nav_item_color"/>
+        app:itemIconSize="40dp"
+        app:itemIconTint="@color/yellow"
+        app:itemTextColor="@color/green"/>
 
 </LinearLayout>

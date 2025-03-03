@@ -98,8 +98,8 @@
 
         <ImageView
             android:id="@+id/ivClosedIcon"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/img_open"
             android:layout_marginBottom="10dp"/>
 
@@ -111,7 +111,8 @@
             android:gravity="center"
             android:text="The stall is open,\nbut no order yet."
             android:textColor="@color/green"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -121,8 +122,8 @@
         android:background="@color/white"
         app:menu="@menu/bottom_nav_menu"
         app:labelVisibilityMode="labeled"
-        app:itemIconSize="40dp"
+        app:itemIconSize="50dp"
         app:itemIconTint="@color/yellow"
-        app:itemTextColor="@color/green"/>
+        app:itemTextColor="@color/black"/>
 
 </LinearLayout>

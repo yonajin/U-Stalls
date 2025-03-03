@@ -217,7 +217,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/Ratings" />
+                    android:src="@drawable/ratings" />
 
                 <ImageView
                     android:id="@+id/ivRatingsName"
@@ -225,7 +225,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/RatingsName" />
+                    android:src="@drawable/nameRating" />
+
             </LinearLayout>
 
         </ScrollView>

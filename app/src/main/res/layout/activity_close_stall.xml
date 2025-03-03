@@ -70,7 +70,8 @@
             android:textColor="@color/black"
             android:layout_marginLeft="20dp"
             android:gravity="left"
-            android:padding="1dp"/>
+            android:padding="1dp"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/tvOrdersHistory"
@@ -99,8 +100,8 @@
 
         <ImageView
             android:id="@+id/ivClosedIcon"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:src="@drawable/closed"
             android:layout_marginBottom="10dp"/>
 
@@ -112,7 +113,8 @@
             android:gravity="center"
             android:text="Stall not open yet.\nOpen when ready."
             android:textColor="@color/green"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
 
@@ -123,9 +125,9 @@
         android:background="@color/white"
         app:menu="@menu/bottom_nav_menu"
         app:labelVisibilityMode="labeled"
-        app:itemIconSize="40dp"
+        app:itemIconSize="50dp"
         app:itemIconTint="@color/yellow"
-        app:itemTextColor="@color/green"/>
+        app:itemTextColor="@color/black"/>
 
 
 </LinearLayout>

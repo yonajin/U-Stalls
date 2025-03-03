@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/order"
-        android:icon="@drawable/add_to_cart_svgrepo_com"
-        android:title="Order" />
+        android:icon="@drawable/order"
+        android:title="Order"
+        tools:ignore="HardcodedText" />
     <item
         android:id="@+id/overview"
         android:icon="@drawable/overview"
-        android:title="Overview" />
+        android:title="Overview"
+        tools:ignore="HardcodedText"/>
     <item
         android:id="@+id/queue"
         android:icon="@drawable/queue"
-        android:title="Queue" />
+        android:title="Queue"
+        tools:ignore="HardcodedText"/>
     <item
         android:id="@+id/menu"
         android:icon="@drawable/menu"
-        android:title="Menu" />
+        android:title="Menu"
+        tools:ignore="HardcodedText"/>
 </menu>

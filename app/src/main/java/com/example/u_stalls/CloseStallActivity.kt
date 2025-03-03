@@ -19,7 +19,7 @@ class CloseStallActivity : AppCompatActivity() {
 
         val orderHistory: Button = findViewById(R.id.tvOrdersHistory)
         val btnClose: Button = findViewById(R.id.btnClose)
-        val bottomNav: BottomNavigationView = findViewById(R.id.bottomNavigationView)
+        val bottomNav: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -36,7 +36,7 @@ class CloseStallActivity : AppCompatActivity() {
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.fragment_button)
 
-        val btnExit: Button = dialog.findViewById(R.id.exitBtn)
+        val btnExit: Button = dialog.findViewById(R.id.dialog_btn)
         btnExit.setOnClickListener { dialog.dismiss() }
 
         dialog.show()

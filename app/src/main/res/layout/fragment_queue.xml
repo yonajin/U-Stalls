@@ -76,7 +76,7 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:orientation="horizontal"
         android:fillViewport="true">
 
@@ -84,47 +84,61 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:paddingBottom="15dp">
+            android:paddingBottom="50dp">
 
-            <ImageButton
+            <Button
                 android:id="@+id/button"
-                android:layout_width="110dp"
-                android:layout_height="50dp"
-                android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/rectanglecard"
-                android:text=""
-                app:srcCompat="@drawable/preparing"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#A48F15"
+                android:fontFamily="@font/poppins_bold"
+                android:text="PREPARING"
+                android:textSize="14sp" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/button1"
-                android:layout_width="110dp"
-                android:layout_height="50dp"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
                 android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/toserve"
-                android:text=""
-                app:srcCompat="@drawable/toserve"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:fontFamily="@font/poppins_bold"
+                android:text="TO SERVE"
+                android:textColor="#000000"
+                android:textColorLink="#01FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="20dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#000000" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/button2"
-                android:layout_width="110dp"
-                android:layout_height="50dp"
+                android:layout_width="135dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
                 android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/canceled"
-                android:text=""
-                app:srcCompat="@drawable/canceled"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:fontFamily="@font/poppins_bold"
+                android:text="CANCELLED"
+                android:textColor="#000000"
+                android:textColorLink="#01FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="20dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#000000" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/button3"
-                android:layout_width="110dp"
-                android:layout_height="50dp"
+                android:layout_width="135dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/completed"
-                android:text=""
-                app:srcCompat="@drawable/completed"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:fontFamily="@font/poppins_bold"
+                android:text="COMPLETED"
+                android:textColor="#000000"
+                android:textColorLink="#01FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="20dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#000000" />
 
         </LinearLayout>
 
@@ -309,62 +323,14 @@
 
     <!-- Bottom Navigation -->
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <ImageButton
-            android:id="@+id/overview_btn"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            app:tint="#00FF8B00"
-            android:src="@drawable/newoverview"
-            android:background="@drawable/newoverview"
-            android:text=""
-            app:srcCompat="@drawable/newoverview"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <ImageButton
-            android:id="@+id/queue_btn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:tint="#00FF8B00"
-            android:background="@drawable/queueue"
-            android:src="@drawable/queueue"
-            app:srcCompat="@drawable/queueue"
-            android:text=""
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <ImageButton
-            android:id="@+id/menu_btn"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            app:tint="#00FF8B00"
-            android:text=""
-            android:background="@drawable/newmenu"
-            app:srcCompat="@drawable/newmenu"
-            android:src="@drawable/newmenu"/>
-
-    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemIconSize="50dp"
+        app:itemIconTint="@color/yellow"
+        app:itemTextColor="@color/black"/>
 </LinearLayout>
